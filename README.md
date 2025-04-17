@@ -61,6 +61,24 @@ python3 cleanup.py
 ```
 This will stop the DNS server and clean up log files.
 
+## Uninstallation
+
+To completely remove the project and all its components:
+
+1. Run the uninstallation script:
+```bash
+python3 uninstall.py
+```
+This will:
+- Remove the virtual environment
+- Uninstall all project dependencies
+- Clean up log files and generated data
+
+2. (Optional) Delete the project directory:
+```bash
+cd .. && rm -rf dns-exfiltration
+```
+
 ## Test Results
 
 After running the test, you should see:
@@ -76,6 +94,7 @@ After running the test, you should see:
 - `cleanup.py`: Process and file cleanup utilities
 - `requirements.txt`: Project dependencies
 - `install.py`: Installation script
+- `uninstall.py`: Uninstallation script
 
 ## Troubleshooting
 
@@ -84,6 +103,7 @@ If you encounter any issues:
 2. Check that the DNS server is running before running the exfiltrator
 3. Ensure port 5300 is available and not blocked by a firewall
 4. Run the cleanup script if processes get stuck
+5. If problems persist, try running the uninstallation script and reinstalling
 
 ## Security Note
 
