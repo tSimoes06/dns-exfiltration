@@ -1,6 +1,6 @@
 # DNS Exfiltration Tool
 
-A Python-based tool for demonstrating DNS exfiltration techniques. This project includes a DNS server, client, and analysis tools to simulate and analyze DNS-based data exfiltration.
+A Python-based tool for demonstrating DNS exfiltration techniques. This project includes a DNS server, client, and analysis tools to simulate and analyze DNS-based data exfiltration. ONLY FOR STUDY PURPOSES!!
 
 ## Features
 
