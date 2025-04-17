@@ -33,6 +33,11 @@ python3 install.py
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
+4. To deactivate the virtual environment when you're done:
+```bash
+deactivate
+```
+
 ## Running the Test
 
 The test consists of three main components that need to be run in sequence:
@@ -65,7 +70,12 @@ This will stop the DNS server and clean up log files.
 
 To completely remove the project and all its components:
 
-1. Run the uninstallation script:
+1. If the virtual environment is active, deactivate it:
+```bash
+deactivate
+```
+
+2. Run the uninstallation script:
 ```bash
 python3 uninstall.py
 ```
@@ -74,10 +84,18 @@ This will:
 - Uninstall all project dependencies
 - Clean up log files and generated data
 
-2. (Optional) Delete the project directory:
+3. (Optional) Delete the project directory:
 ```bash
 cd .. && rm -rf dns-exfiltration
 ```
+
+Note: If you encounter any errors during uninstallation:
+- Make sure you've deactivated the virtual environment first
+- If you get permission errors, you might need to close any programs using the project files
+- On some systems, you might need to manually delete the virtual environment directory:
+  ```bash
+  rm -rf venv
+  ```
 
 ## Test Results
 
